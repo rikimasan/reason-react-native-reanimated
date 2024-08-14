@@ -3,7 +3,7 @@ opam-version: "2.0"
 synopsis: "ReasonML Bindings for React Native Reanimated"
 description: "ReasonML Bindings for React Native Reanimated"
 maintainer: ["Kian Masri"]
-authors: ["idk"]
+authors: ["Kian Masri"]
 license: "MIT"
 homepage: "https://github.com/rikimasan/reason-react-native-reanimated"
 bug-reports:
@@ -15,6 +15,7 @@ depends: [
   "ocaml" {>= "5.1.0"}
   "reason" {>= "3.10.0"}
   "reason-react"
+  "reason-react-native"
   "odoc" {with-doc}
 ]
 build: [
@@ -33,3 +34,6 @@ build: [
 ]
 dev-repo:
   "git+https://github.com/rikimasan/reason-react-native-reanimated.git"
+pin-depends: [
+  [ "reason-react-native.dev" "git+https://github.com/qwickshifts/reason-react-native.git#0.74.3" ]
+]

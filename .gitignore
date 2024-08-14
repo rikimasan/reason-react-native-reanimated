@@ -36,3 +36,10 @@ _opam/
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Node
+node_modules/
+package-lock.json
+
+# VSCode
+.vscode/

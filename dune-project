@@ -9,7 +9,7 @@
 
 (maintainers "Kian Masri")
 
-(authors "idk")
+(authors "Kian Masri")
 
 (homepage https://github.com/rikimasan/reason-react-native-reanimated)
 
@@ -32,6 +32,7 @@
    (>= 5.1.0))
   (reason
    (>= 3.10.0))
-  reason-react))
+  reason-react
+  reason-react-native))
 
 (generate_opam_files)
