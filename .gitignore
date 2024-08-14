@@ -27,3 +27,12 @@ setup.log
 
 # Local OPAM switch
 _opam/
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

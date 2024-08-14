@@ -1,0 +1,7 @@
+(library
+ (modes melange)
+ (name reasonReactNativeReanimated)
+ (public_name reason-react-native-reanimated)
+ (libraries reason-react)
+ (preprocess
+  (pps melange.ppx)))

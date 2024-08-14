@@ -1,0 +1,6 @@
+{
+  "packageManager": "yarn@4.4.0",
+  "dependencies": {
+    "react-native-reanimated": "^3.15.0"
+  }
+}
