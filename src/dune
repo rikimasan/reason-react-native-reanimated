@@ -1,6 +1,6 @@
 (library
  (modes melange)
- (name reasonReactNativeReanimated)
+ (name reanimated)
  (public_name reason-react-native-reanimated)
  (libraries reason-react reason-react-native)
  (preprocess
