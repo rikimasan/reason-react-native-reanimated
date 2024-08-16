@@ -16,7 +16,8 @@ external interpolate:
     ~value: float,
     ~input: array(float),
     ~output: array(float),
-    ~extrapolate: extrapolate=?
+    ~extrapolate: extrapolate=?,
+    unit
   ) =>
   float =
   "interpolate";
@@ -31,7 +32,8 @@ external interpolateColor:
     ~input: array(float),
     ~output: array(string),
     ~colorSpace: [ | `RGB | `HSV]=?,
-    ~options: interpolationOptions=?
+    ~options: interpolationOptions=?,
+    unit
   ) =>
   string =
   "interpolateColor";

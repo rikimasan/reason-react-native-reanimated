@@ -1,5 +1,5 @@
 module SharedValue = {
-  type t('a);
+  type t('a) = 'a;
 
   external sharedValue: t('a) = "SharedValue";
 
