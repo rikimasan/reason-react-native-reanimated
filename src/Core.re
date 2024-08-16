@@ -45,7 +45,8 @@ external useDerivedValue:
   "useDerivedValue";
 
 [@mel.module "react-native-reanimated"]
-external createAnimatedComponent: React.element => React.element =
+external createAnimatedComponent:
+  React.component('props) => React.component('props) =
   "createAnimatedComponent";
 
 [@mel.module "react-native-reanimated"]
