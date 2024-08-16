@@ -1,4 +1,4 @@
 open ReactNative;
 
 [@react.component]
-let make = props => props |> Image.make |> Core.createAnimatedComponent;
+let make = props => props |> ScrollView.make |> Core.createAnimatedComponent;
