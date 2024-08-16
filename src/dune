@@ -5,3 +5,5 @@
  (libraries reason-react reason-react-native)
  (preprocess
   (pps melange.ppx)))
+
+(include_subdirs unqualified)
