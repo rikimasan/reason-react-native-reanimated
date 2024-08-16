@@ -6,12 +6,11 @@ external scrollTo:
 
 [@mel.module "react-native-reanimated"]
 external useScrollViewOffset:
-  (
-    ~animatedRef: Core.animatedRef,
-    ~initialRef: Core.SharedValue.t(float)=?
-  ) =>
+  (Core.animatedRef, ~initialRef: Core.SharedValue.t(float)=?) =>
   Core.SharedValue.t(float) =
   "useScrollViewOffset";
+let useScrollViewOffset = (~initialRef=?, animatedRef) =>
+  useScrollViewOffset(animatedRef, ~initialRef?);
 
 type reanimatedScrollEvent = [
   | `onScroll
