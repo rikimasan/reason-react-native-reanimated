@@ -4,6 +4,6 @@
  (public_name reason-react-native-reanimated)
  (libraries reason-react reason-react-native)
  (preprocess
-  (pps melange.ppx)))
+  (pps melange.ppx reason-react-ppx)))
 
 (include_subdirs unqualified)

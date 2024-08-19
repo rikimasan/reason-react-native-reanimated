@@ -44,7 +44,7 @@ external useDerivedValue:
   SharedValue.t('a) =
   "useDerivedValue";
 
-[@mel.module "react-native-reanimated"]
+[@mel.module "react-native-reanimated"] [@mel.scope "Animated"]
 external createAnimatedComponent:
   React.component('props) => React.component('props) =
   "createAnimatedComponent";
