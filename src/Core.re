@@ -34,9 +34,13 @@ external useAnimatedProps:
   ReactNative.Style.t =
   "useAnimatedProps";
 
-type animatedRef; // TODO: maybe something else, for now abstract type
+module AnimatedRef = {
+  type t = ReactNative.Ref.t(ReactNative.NativeElement.element);
+
+  [@mel.send] external current: t => t = "current";
+};
 [@mel.module "react-native-reanimated"]
-external useAnimatedRef: unit => animatedRef = "useAnimatedRef";
+external useAnimatedRef: unit => AnimatedRef.t = "useAnimatedRef";
 
 [@mel.module "react-native-reanimated"]
 external useDerivedValue:
@@ -46,8 +50,7 @@ external useDerivedValue:
 
 [@mel.module "react-native-reanimated"] [@mel.scope "Animated"]
 external createAnimatedComponent:
-  React.componentLike('props, 'return) =>
-  React.componentLike('props, 'return) =
+  React.component('props) => React.component('props) =
   "createAnimatedComponent";
 
 [@mel.module "react-native-reanimated"]

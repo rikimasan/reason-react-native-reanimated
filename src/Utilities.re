@@ -39,5 +39,6 @@ external interpolateColor:
   "interpolateColor";
 
 [@mel.module "react-native-reanimated"]
-external getRelativeCoords: (~animatedRef: Core.animatedRef) => componentCoords =
+external getRelativeCoords:
+  (~animatedRef: Core.AnimatedRef.t) => componentCoords =
   "getRelativeCoords";
