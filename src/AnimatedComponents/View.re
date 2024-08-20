@@ -1,4 +1,6 @@
 open ReactNative;
 
-[@react.component]
-let make = () => Core.createAnimatedComponent(View.make);
+let makeProps = Fun.id;
+let make = props => {
+  React.createElement(Core.createAnimatedComponent(View.make), props);
+};
