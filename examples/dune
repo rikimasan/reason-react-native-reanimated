@@ -1,0 +1,5 @@
+(melange.emit
+ (target examples)
+ (libraries reason-react-native-reanimated reason-react)
+ (preprocess
+  (pps reason-react-ppx melange.ppx)))
